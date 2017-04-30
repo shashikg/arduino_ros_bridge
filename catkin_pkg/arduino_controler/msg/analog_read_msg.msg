@@ -1,0 +1,14 @@
+int32 pin0
+int32 pin1
+int32 pin2
+int32 pin3
+int32 pin4
+int32 pin5
+int32 pin6
+int32 pin7
+int32 pin8
+int32 pin9
+int32 pin10
+int32 pin11
+int32 pin12
+int32 pin13
