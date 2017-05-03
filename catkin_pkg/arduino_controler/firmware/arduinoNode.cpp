@@ -51,6 +51,7 @@ void setup()
   nh.initNode(); //initialising the node
   nh.advertiseService(pin_mode_server);
   nh.advertiseService(analog_write_server);
+  nh.advertiseService(analog_read_server);
   nh.advertise(pub_data);
 }
 
