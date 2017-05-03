@@ -24,6 +24,7 @@ add_message_files(
    FILES
 	pin_Mode.srv
 	analog_write.srv
+	analog_read.srv
  )
 
 generate_messages(

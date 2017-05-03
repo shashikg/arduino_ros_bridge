@@ -7,6 +7,6 @@ add_definitions(-DUSB_CON)
 
 generate_arduino_firmware(arduino_node
   SRCS arduinoNode.cpp ${ROS_LIB_DIR}/time.cpp
-  BOARD uno
+  BOARD mega2560
   PORT /dev/ttyACM0
 )

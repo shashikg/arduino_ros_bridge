@@ -12,3 +12,5 @@ int32 pin10
 int32 pin11
 int32 pin12
 int32 pin13
+int32 pin14
+int32 pin15
