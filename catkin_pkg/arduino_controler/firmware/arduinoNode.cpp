@@ -33,11 +33,11 @@ void callback_analogwrite(const analog_write::Request & req, analog_write::Respo
 
 ros::ServiceServer<analog_write::Request, analog_write::Response> analog_write_server("analog_write_srv",&callback_analogwrite);
 
-void callback_analogread(const analog_write::Request & req, analog_write::Response & res){
-  res.out=analogRead(req.pin);
+void callback_analogread(const analog_read::Request & req, analog_read::Response & res){
+  res.data=analogRead(req.pin);
 }
 
-ros::ServiceServer<analog_write::Request, analog_write::Response> analog_read_server("analog_read_srv",&callback_analogread);
+ros::ServiceServer<analog_read::Request, analog_read::Response> analog_read_server("analog_read_srv",&callback_analogread);
 
 arduino_controler::analog_read_msg analog_msg;
 
@@ -57,7 +57,7 @@ void setup()
 
 void loop()
 {
-  
+
   analog_msg.pin0=analogRead(A0);
   analog_msg.pin1=analogRead(A1);
   analog_msg.pin2=analogRead(A2);
